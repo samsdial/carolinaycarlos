@@ -4,7 +4,8 @@
     position: relative
     +MQ(M)
         width: 50%
-
+    &.full
+        height: 100vh
 .shears
     position: absolute
     top: 46%
@@ -63,6 +64,9 @@
         height: 529px
         display: block
         transform: rotate(5deg)
+.burlap.intro
+    top: 10%
+    left: -7%
 .burlap.open
     top: 10%
     left: 15%
@@ -124,9 +128,10 @@
 //         height: 149px
 //         display: block
 .brown
-    position: absolute
-    top: 10%
-    left: 15%
+    position: relative
+    top: 20%
+    left: -3%
+    display: block
     &:after
         content: ""
         background-image: url('../images/theme/brown.png')
@@ -145,6 +150,20 @@
     &:after
         content: ""
         background-image: url('../images/theme/heart_site.png')
+        background-repeat: no-repeat
+        background-position: center center
+        background-size: contain
+        width: 250px
+        height: 205px
+        display: block
+.heart--into
+    position: absolute
+    top: 28%
+    right: 39%
+    z-index: 99
+    &:after
+        content: ""
+        background-image: url('../images/theme/heart--into.png')
         background-repeat: no-repeat
         background-position: center center
         background-size: contain
@@ -171,10 +190,26 @@
     right: 60%
     &:after
         content: ""
-        background-image: url('../images/theme/blackberry.png')
+        background-image: url('../images/theme/blackberry--site.png')
         background-repeat: no-repeat
         background-position: center center
         background-size: contain
-        width: 100px
-        height: 87px
+        width: 242px
+        height: 327px
         display: block
+
+.ribbon
+    background: $lightPeach
+    position: absolute
+    display: block
+    width: 79%
+    left: 56%
+    top: 43%
+    padding: 5px
+    margin-left: -45%
+    z-index: 10
+    box-shadow: -5px 10px 14px -10px rgba($black, .75)
+    .deco
+        border-top: 1.3px dashed $sienna
+        border-bottom: 1.3px dashed $sienna
+        height: 24px
