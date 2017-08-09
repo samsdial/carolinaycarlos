@@ -1,0 +1,57 @@
+.heart
+    position: absolute
+    &:after
+        top: 0%
+    &.one
+        top: 34vh
+        left: 25%
+        z-index: 99
+        +MQ(XS)
+            left: 13%
+        +MQ(S)
+            left: 5%
+        +MQ(M)
+            left: 5%
+        &:after
+            background-image: url('../images/theme/heart_one.png')
+            +w-size(138)
+            +h-size(113)
+            +rotate(22)
+            +MQ(XS)
+                +w-size(250)
+                +h-size(205)
+    &.two
+        bottom: 39%
+        right: 28%
+        &:after
+            +afterimg
+            background-image: url('../images/theme/heart_two.png')
+            +w-size(250)
+            +h-size(205)
+            +rotate(22)
+
+// .heart
+//     position: absolute
+//     bottom: 39%
+//     right: 28%
+//     &:after
+//         +afterimg
+//         background-image: url('../images/theme/heart_site.png')
+//         width: 250px
+//         height: 205px
+//         +rotate(22)
+// .heart--into
+//     position: absolute
+//     top: 0
+//     right: 25%
+//     left: 25%
+//     z-index: 99
+//     +MQ(S)
+//         top: 0
+//         right: 25%
+//         left: 25%
+//     &:after
+//         +afterimg
+//         background-image: url('../images/theme/heart--into.png')
+//         width: 252px
+//         height: 207px

@@ -5,8 +5,29 @@ $pixelBase: 16
   font-size: (($sizeValue * 10) / $pixelBase) + rem
 
 
+=w-size($sizeValue: 0.6)
+  width: (($sizeValue * 1) / $pixelBase) + em
+
+=h-size($sizeValue: 1.6)
+  height: (($sizeValue * 1) / $pixelBase) + em
+
+
+
+//after o before img
+=afterimg
+    content: ""
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: contain
+    display: inline-block
+    text-align: center
+=rotate($rotateValue: 0)
+  transform: rotate($rotateValue + deg)
+
 //Mediaqueri
 =MQ($canvas)
+    @if $canvas == XS
+        @media only screen and (min-width: $XS) { @content; }
     @if $canvas == S
         @media only screen and (min-width: $S) { @content; }
 

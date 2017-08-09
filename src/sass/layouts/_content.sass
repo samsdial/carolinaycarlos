@@ -1,25 +1,17 @@
 
-//after o before img
-=afterimg
-    content: ""
-    background-repeat: no-repeat
-    background-position: center center
-    background-size: contain
-    display: block
-=rotate($rotateValue: 0)
-  transform: rotate($rotateValue + deg)
 
 .content
     display: block
     position: relative
     top: 0
-    width: 160vw
+    width: 100vw
+    height: 85vh
     +MQ(S)
-        width: 55%
+        width: 65%
     &.full
-        height: 171vh
+        //height: 171vh
         +MQ(S)
-            height: 100vh
+            //height: 100vh
 .card
     position: absolute
     top: 14%
@@ -130,12 +122,14 @@
         +rotate(22)
 .heart--into
     position: absolute
-    top: 44%
-    right: 37%
+    top: 0
+    right: 25%
+    left: 25%
     z-index: 99
     +MQ(S)
-        top: 42%
-        right: 47%
+        top: 0
+        right: 25%
+        left: 25%
     &:after
         +afterimg
         background-image: url('../images/theme/heart--into.png')
@@ -196,35 +190,6 @@
         border-bottom: 1.3px dashed $sienna
         height: 24px
 
-.envelope
-    position: absolute
-    &:after
-        +afterimg
-    &.one
-        top: 2%
-        right: 0%
-        +MQ(S)
-            right: 24%
-        &:after
-            background-image: url('../images/site/envelope.png')
-            width: 338px
-            height: 650px
-    &.two
-        top: 30%
-        left: 0
-        +MQ(S)
-            left: 20%
-        &:after
-            background-image: url('../images/site/envelope_burlap.png')
-            width: 378px
-            height: 480px
-    &.open
-        top: 2%
-        right: 24%
-        &:after
-            background-image: url('../images/site/envelope_open.png')
-            width: 486px
-            height: 650px
 .perejil
     position: absolute
     &:after
