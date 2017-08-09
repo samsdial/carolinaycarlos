@@ -6,8 +6,8 @@ html
 *, *:before, *:after
     box-sizing: inherit
 body
-    width: 100%
-    height: 100vh
+    width: 169vw
+    height: 171vh
     font-size: 1.5rem
     font-family: $primary-font
     background-image: url('../images/theme/bgi_wood--old.jpg')
@@ -18,6 +18,9 @@ body
     justify-content: center
     align-items: center
     overflow: hidden
+    +MQ(S)
+        width: 100vw
+        height: 100vh
 a
     text-decoration: none
     color: $blue

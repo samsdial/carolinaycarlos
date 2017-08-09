@@ -13,12 +13,13 @@
     display: block
     position: relative
     top: 0
-    width: 100%
-    width: 95%
+    width: 160vw
     +MQ(S)
         width: 55%
     &.full
-        height: 100vh
+        height: 171vh
+        +MQ(S)
+            height: 100vh
 .card
     position: absolute
     top: 14%
@@ -129,9 +130,12 @@
         +rotate(22)
 .heart--into
     position: absolute
-    top: 42%
-    right: 47%
+    top: 44%
+    right: 37%
     z-index: 99
+    +MQ(S)
+        top: 42%
+        right: 47%
     &:after
         +afterimg
         background-image: url('../images/theme/heart--into.png')
@@ -198,14 +202,18 @@
         +afterimg
     &.one
         top: 2%
-        right: 24%
+        right: 0%
+        +MQ(S)
+            right: 24%
         &:after
             background-image: url('../images/site/envelope.png')
             width: 338px
             height: 650px
     &.two
         top: 30%
-        left: 20%
+        left: 0
+        +MQ(S)
+            left: 20%
         &:after
             background-image: url('../images/site/envelope_burlap.png')
             width: 378px
@@ -253,12 +261,17 @@
             width: 225px
             height: 150px
 .into
-    width: 55%
-    height: 160vh
+    width: 60%
+    height: 260vh
     display: block
     position: relative
-    top: -130px
-    left: -45px
+    top: -120px
+    left: -10%
     margin: 0 auto
     box-shadow: -1px 2px 84px -9px rgba($black, .75)
     +rotate(15)
+    +MQ(S)
+        width: 55%
+        height: 160vh
+        left: -45px
+        top: -130px
