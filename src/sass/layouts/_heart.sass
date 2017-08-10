@@ -1,3 +1,4 @@
+$value: 0
 .heart
     position: absolute
     &:after
@@ -6,6 +7,8 @@
         top: 34vh
         left: 25%
         z-index: 99
+        +point($value+50)
+            left: 2px
         +MQ(XS)
             left: 13%
         +MQ(S)
@@ -14,8 +17,8 @@
             left: 5%
         &:after
             background-image: url('../images/theme/heart_one.png')
-            +w-size(138)
-            +h-size(113)
+            +w-size(200)
+            +h-size(164)
             +rotate(22)
             +MQ(XS)
                 +w-size(250)

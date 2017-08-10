@@ -24,11 +24,16 @@ $pixelBase: 16
 =rotate($rotateValue: 0)
   transform: rotate($rotateValue + deg)
 
+
+
+=point($canvas)
+    @media screen and (min-width: $value) { @content; }
+
 //Mediaqueri
 =MQ($canvas)
     @if $canvas == XS
         @media only screen and (min-width: $XS) { @content; }
-    @if $canvas == S
+    @else if $canvas == S
         @media only screen and (min-width: $S) { @content; }
 
     @else if $canvas == M
