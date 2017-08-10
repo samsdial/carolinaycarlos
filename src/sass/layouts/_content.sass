@@ -5,221 +5,232 @@
     position: relative
     top: 0
     width: 100vw
-    height: 85vh
+    height: 100vh
     +MQ(S)
         width: 65%
     &.full
-        //height: 171vh
-        +MQ(S)
-            //height: 100vh
+        +center
 .card
-    position: absolute
-    top: 14%
-    left: 0
-    display: block
-    width: 95%
-    +MQ(S)
-        width: 52%
-.shears
-    position: absolute
-    top: 46%
-    left: 15%
-    &:after
-        +afterimg
-        background-image: url('../images/theme/shears.png')
-        width: 300px
-        height: 300px
-        transform: rotate(90deg)
-
-.clipWoods
-    position: absolute
-    top: 29%
-    left: 18.6%
-    &:after
-        +afterimg
-        background-image: url('../images/theme/clips_wood.png')
-        width: 139px
-        height: 140px
-        transform: rotate(-45deg)
-.loveWoods
-    position: absolute
-    top: 90%
-    right: 25%
-    &:after
-        +afterimg
-        background-image: url('../images/theme/loveWoods.png')
-        width: 300px
-        height: 180px
-        transform: rotate(5deg)
-
-.plants
-    position: absolute
-    top: -50%
-    right: -15%
-    &:after
-        +afterimg
-        background-image: url('../images/theme/plant.png')
-        width: 500px
-        height: 529px
-        transform: rotate(5deg)
-.burlap.intro
-    top: 10%
-    left: -7%
-.burlap.open
-    top: 18%
-    left: -6%
-.burlap.close
-    top: 13%
-    right: 16%
-.burlap
-    position: absolute
-    &:after
-        +afterimg
-        background-image: url('../images/theme/burlapped.png')
-        width: 700px
-        height: 500px
-        transform: rotate(5deg)
-.cherry
-    position: absolute
-.cherry.top
-    top: -8%
-    left: 2%
-.cherry.bottom
-    bottom: 10%
-    right: 5%
-.cherry.top
-    &:after
-        +afterimg
-        background-image: url('../images/theme/cherry-top.png')
-        width: 400px
-        height: 323px
-        display: block
-.cherry.bottom
-    &:after
-        +afterimg
-        background-image: url('../images/theme/cherry.png')
-        width: 900px
-        height: 641px
-.brown
-    position: relative
-    top: 20%
-    left: -3%
-    display: block
-    &:after
-        +afterimg
-        background-image: url('../images/theme/brown.png')
-        width: 800px
-        height: 338px
-.heart
-    position: absolute
-    bottom: 39%
-    right: 28%
-    &:after
-        +afterimg
-        background-image: url('../images/theme/heart_site.png')
-        width: 250px
-        height: 205px
-        +rotate(22)
-.heart--into
-    position: absolute
-    top: 0
-    right: 25%
-    left: 25%
     z-index: 99
-    +MQ(S)
-        top: 0
-        right: 25%
-        left: 25%
-    &:after
-        +afterimg
-        background-image: url('../images/theme/heart--into.png')
-        width: 252px
-        height: 207px
-.green
-    position: absolute
-    &:after
-        +afterimg
-        background-image: url('../images/theme/green.png')
-    &.one
-        top: 22%
-        left: 22%
-        &:after
-            width: 250px
-            height: 205px
-            +rotate(250)
-    &.two
-        bottom: 25%
-        right: 22%
-        &:after
-            width: 200px
-            height: 164px
-            +rotate(-10)
+    margin-bottom: 350px
+    width: 100%
+    margin-right: 0px
+    +MQ(XS)
+        width: 70%
+        margin-bottom: 147px
+        margin-right: 120px
+    +MQ(M)
+        width: 59%
+        margin-bottom: 98px
+        margin-right: 180px
+// .card
+//     position: absolute
+//     top: 14%
+//     left: 0
+//     display: block
+//     width: 95%
+//     +MQ(S)
+//         width: 52%
+// .shears
+//     position: absolute
+//     top: 46%
+//     left: 15%
+//     &:after
+//         +afterimg
+//         background-image: url('../images/theme/shears.png')
+//         width: 300px
+//         height: 300px
+//         transform: rotate(90deg)
 
-//ok
-.blackberry
-    position: absolute
-    &:after
-        +afterimg
-        background-image: url('../images/site/blackberry--site.png')
-    &.one
-        top: 19%
-        left: 24%
-        &:after
-            width: 242px
-            height: 327px
-            +rotate(-128)
-    &.two
-        bottom: 18%
-        right: 29%
-        &:after
-            width: 242px
-            height: 327px
-.ribbon
-    background: $lightPeach
-    position: absolute
-    display: block
-    width: 79%
-    left: 56%
-    top: 43%
-    padding: 5px
-    margin-left: -45%
-    z-index: 10
-    box-shadow: -5px 10px 14px -10px rgba($black, .75)
-    .deco
-        border-top: 1.3px dashed $sienna
-        border-bottom: 1.3px dashed $sienna
-        height: 24px
+// .clipWoods
+//     position: absolute
+//     top: 29%
+//     left: 18.6%
+//     &:after
+//         +afterimg
+//         background-image: url('../images/theme/clips_wood.png')
+//         width: 139px
+//         height: 140px
+//         transform: rotate(-45deg)
+// .loveWoods
+//     position: absolute
+//     top: 90%
+//     right: 25%
+//     &:after
+//         +afterimg
+//         background-image: url('../images/theme/loveWoods.png')
+//         width: 300px
+//         height: 180px
+//         transform: rotate(5deg)
 
-.perejil
-    position: absolute
-    &:after
-        +afterimg
-        background-image: url('../images/site/perejil.png')
-    &.one
-        bottom: 22%
-        left: 0%
-        &:after
-            width: 618px
-            height: 412px
-    &.two
-        bottom: 32%
-        right: -3%
-        &:after
-            width: 618px
-            height: 412px
-.into
-    width: 60%
-    height: 260vh
-    display: block
-    position: relative
-    top: -120px
-    left: -10%
-    margin: 0 auto
-    box-shadow: -1px 2px 84px -9px rgba($black, .75)
-    +rotate(15)
-    +MQ(S)
-        width: 55%
-        height: 160vh
-        left: -45px
-        top: -130px
+// .plants
+//     position: absolute
+//     top: -50%
+//     right: -15%
+//     &:after
+//         +afterimg
+//         background-image: url('../images/theme/plant.png')
+//         width: 500px
+//         height: 529px
+//         transform: rotate(5deg)
+// .burlap.intro
+//     top: 10%
+//     left: -7%
+// .burlap.open
+//     top: 18%
+//     left: -6%
+// .burlap.close
+//     top: 13%
+//     right: 16%
+// .burlap
+//     position: absolute
+//     &:after
+//         +afterimg
+//         background-image: url('../images/theme/burlapped.png')
+//         width: 700px
+//         height: 500px
+//         transform: rotate(5deg)
+// .cherry
+//     position: absolute
+// .cherry.top
+//     top: -8%
+//     left: 2%
+// .cherry.bottom
+//     bottom: 10%
+//     right: 5%
+// .cherry.top
+//     &:after
+//         +afterimg
+//         background-image: url('../images/theme/cherry-top.png')
+//         width: 400px
+//         height: 323px
+//         display: block
+// .cherry.bottom
+//     &:after
+//         +afterimg
+//         background-image: url('../images/theme/cherry.png')
+//         width: 900px
+//         height: 641px
+// .brown
+//     position: relative
+//     top: 20%
+//     left: -3%
+//     display: block
+//     &:after
+//         +afterimg
+//         background-image: url('../images/theme/brown.png')
+//         width: 800px
+//         height: 338px
+// .heart
+//     position: absolute
+//     bottom: 39%
+//     right: 28%
+//     &:after
+//         +afterimg
+//         background-image: url('../images/theme/heart_site.png')
+//         width: 250px
+//         height: 205px
+//         +rotate(22)
+// .heart--into
+//     position: absolute
+//     top: 0
+//     right: 25%
+//     left: 25%
+//     z-index: 99
+//     +MQ(S)
+//         top: 0
+//         right: 25%
+//         left: 25%
+//     &:after
+//         +afterimg
+//         background-image: url('../images/theme/heart--into.png')
+//         width: 252px
+//         height: 207px
+// .green
+//     position: absolute
+//     &:after
+//         +afterimg
+//         background-image: url('../images/theme/green.png')
+//     &.one
+//         top: 22%
+//         left: 22%
+//         &:after
+//             width: 250px
+//             height: 205px
+//             +rotate(250)
+//     &.two
+//         bottom: 25%
+//         right: 22%
+//         &:after
+//             width: 200px
+//             height: 164px
+//             +rotate(-10)
+
+// //ok
+// .blackberry
+//     position: absolute
+//     &:after
+//         +afterimg
+//         background-image: url('../images/site/blackberry--site.png')
+//     &.one
+//         top: 19%
+//         left: 24%
+//         &:after
+//             width: 242px
+//             height: 327px
+//             +rotate(-128)
+//     &.two
+//         bottom: 18%
+//         right: 29%
+//         &:after
+//             width: 242px
+//             height: 327px
+// .ribbon
+//     background: $lightPeach
+//     position: absolute
+//     display: block
+//     width: 79%
+//     left: 56%
+//     top: 43%
+//     padding: 5px
+//     margin-left: -45%
+//     z-index: 10
+//     box-shadow: -5px 10px 14px -10px rgba($black, .75)
+//     .deco
+//         border-top: 1.3px dashed $sienna
+//         border-bottom: 1.3px dashed $sienna
+//         height: 24px
+
+// .perejil
+//     position: absolute
+//     &:after
+//         +afterimg
+//         background-image: url('../images/site/perejil.png')
+//     &.one
+//         bottom: 22%
+//         left: 0%
+//         &:after
+//             width: 618px
+//             height: 412px
+//     &.two
+//         bottom: 32%
+//         right: -3%
+//         &:after
+//             width: 618px
+//             height: 412px
+// .into
+//     width: 60%
+//     height: 260vh
+//     display: block
+//     position: relative
+//     top: -120px
+//     left: -10%
+//     margin: 0 auto
+//     box-shadow: -1px 2px 84px -9px rgba($black, .75)
+//     +rotate(15)
+//     +MQ(S)
+//         width: 55%
+//         height: 160vh
+//         left: -45px
+//         top: -130px
 

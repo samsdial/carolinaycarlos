@@ -1,29 +1,18 @@
-.fernhome
-    position: absolute
-    &:after
+.fern
+    &home
+        position: absolute
+        top: 0
+        left: 0
         +afterimg
-    &.one
-        top: 6vh
-        right: 12%
-        +MQ(XS)
-            top: 0
-            bottom: 3vh
-            left: 0%
-        &:after
-            background-image: url('../images/site/fernhome.png')
-            +w-size(408)
-            +h-size(272)
-    &.two
-        bottom: 5%
-        right: -13%
-        +MQ(XS)
-            top: 20%
-            right: -13%
-            bottom: inherit
-        &:after
-            background-image: url('../images/site/fernhome_two.png')
-            +w-size(225)
-            +h-size(150)
-            +rotate(25)
-            +MQ(XS)
-                +rotate(0)
+        background-image: url(../images/site/home_913.png)
+        width: 100%
+        height: 100vh
+    &two
+        position: absolute
+        top: 0
+        left: 0
+        +afterimg
+        background-image: url(../images/site/two_913.png)
+        width: 100%
+        height: 100vh
+        z-index: -1
