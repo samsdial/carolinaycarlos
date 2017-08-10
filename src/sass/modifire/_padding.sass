@@ -4,6 +4,7 @@ $base-pd-spacing: .5em
     &_title--line
         padding: $base-pd-spacing 0
     &_box
+        padding: $base-pd-spacing+1
         +MQ(M)
             padding: $base-pd-spacing+1
         &--x
@@ -36,6 +37,12 @@ $base-pd-spacing: .5em
                         padding-top: $base-pd-spacing * 10 !important
             &200
                 padding-top: $base-pd-spacing * 20
+            &66e
+                padding-top: 66em
+                +MQ(S)
+                    padding-top: 20em
+                +MQ(M)
+                    padding-top: 15em
     &_bottom
         &--x
             &10

@@ -17,7 +17,7 @@ body
     display: flex
     justify-content: center
     align-items: center
-    overflow: hidden
+    overflow-x: hidden
     +MQ(S)
         width: 100vw
         height: 100vh
@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6, p
     color: $peach
     font-weight: normal
 // mixing
-$pixelBase: 16
+$pixelBase: 20
 =font-size($sizeValue: 1.6)
   font-size: ($sizeValue * 10) + px
   font-size: (($sizeValue * 10) / $pixelBase) + vh
