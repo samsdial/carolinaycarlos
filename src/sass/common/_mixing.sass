@@ -17,12 +17,10 @@ $pixelBase: 16
 =afterimg
     background-repeat: no-repeat
     background-position: center center
-    background-size: inherit
+    background-size: 100%
     display: inline-block
     text-align: center
     +MQ(M)
-      background-size: 100%
-    +MQ(L)
       background-size: contain
 =rotate($rotateValue: 0)
   transform: rotate($rotateValue + deg)

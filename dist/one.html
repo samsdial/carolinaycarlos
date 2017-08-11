@@ -26,74 +26,55 @@
     <meta name="twitter:url" content="http://localhost:3000/docs">
     <meta name="twitter:title" content="CarolinayCarlos">
     <meta name="twitter:description" content="19 septiembre">
-    <link href="https://cdn.jsdelivr.net/jquery.slick/1.3.15/slick.css" rel="stylesheet" media="screen">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.3.0/lity.css" rel="stylesheet" media="screen">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet" media="screen">
     <link href="css/style.css" rel="stylesheet" media="screen">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script><!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script><!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script><![endif]-->
   </head>
   <body style="position: relative;">
     <section class="content full txt_center">
-      <section class="card pd_top--x66e">
-        <article class="one">
-          <div class="info pd_box">
-            <div class="subtitle txt_center mg_bottom--x10 mg_top--x30">
-              <h3>JUNTO CON SUS PADRES</h3>
-            </div>
-            <div class="title txt_center txt_shadow--halls mg_bottom--x10">
-              <h2><b>CAROLINA FALCÓN Y CARLOS AMAYA</b></h2>
-            </div>
-            <div class="subtitle txt_center mg_bottom--x10">
-              <h4>Invitan a su</h4>
-            </div>
-            <div class="title font_second fz_13 txt_center txt_shadow--halls mg_bottom--x10">
-              <h2>Boda</h2>
-            </div>
-            <div class="subtitle txt_center mg_bottom--x10">
-              <h4>Martes</h4>
-              <hr class="line line_site">
-            </div>
-            <div class="title fz_7 txt_center txt_shadow--halls mg_bottom--x10">
-              <h2>19 de Septiembre 2017</h2>
-              <hr class="line line_site">
-            </div>
-            <div class="subtitle txt_center mg_bottom--x10">
-              <h4>Ladies’ Pavillion</h4>
-              <h4>MANHATTAN NEY YORK, NY 10024</h4>
-              <hr class="line line_site">
-            </div>
-          </div>
-        </article>
-        <article class="two">
-          <div class="info bgc--lightpeach pd_box">
-            <div class="subtitle txt_center mg_bottom--x10 mg_top--x30">
-              <h3>DESPUÉS DE UNA CEREMONIA DE BODAS</h3>
-              <h3>ESTAMOS FELICES DE INVITARLOS</h3>
-              <h3>A LA RECEPCIÓN</h3>
-              <h3>PARA CELEBRAR CON LOS NUEVOS</h3>
-            </div>
-            <div class="title font_second fz_13 txt_center txt_shadow--halls mg_bottom--x10">
-              <h2>Mr & Mrs</h2>
-              <hr class="line line_site">
-            </div>
-            <div class="subtitle txt_center mg_bottom--x10 mg_top--x30">
-              <h3>TRATTORIA L’INCONTRO 21-76 31ST STREET, ASTORIA NY 11105</h3>
-            </div>
-          </div>
-        </article>
-        <article class="tree">
-          <div class="info bgc--lightpeach pd_box">
-            <div class="subtitle txt_center mg_bottom--x10 mg_top--x30">
-              <h3>JUNTO CON SUS PADRES</h3>
-            </div>
-          </div>
-        </article>
+      <section class="card">
+        <article class="one"></article>
+        <article class="two"><a class="btn btn_gosth" href="#indline" data-lity>leer</a></article>
+        <article class="tree"></article>
       </section>
     </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <div class="lity-hide bgc--lightpeach border_box" id="indline">
+      <article class="pd_box">
+        <div class="title fz_7 txt_center txt_shadow--halls mg_bottom--x10">
+          <h3>Confirmar</h3>
+        </div>
+        <ul class="tabs" data-tabgroup="first-tab-group">
+          <li><a class="active" href="#tab1">No me lo <br> perderia</a></li>
+          <li><a href="#tab2">Celebraremos <br> desde lejos</a></li>
+        </ul>
+        <section class="tabgroup" id="first-tab-group">
+          <div id="tab1">
+            <form class="confrim">
+              <label for="name">Nombre</label>
+              <input type="text" placehorder="Mi Nombre y Apellido">
+              <label for="name">Acompañante</label>
+              <input type="text" placehorder="Mi Nombre y Apellido">
+              <button class="btn btn_site" type="submit">Enviar</button>
+            </form>
+          </div>
+          <div id="tab2">
+            <form class="message">
+              <label for="name">Nombre</label>
+              <input type="text" placehorder="Mi Nombre y Apellido">
+              <label for="name">Mensaje</label>
+              <input type="text" placehorder="Mi Nombre y Apellido">
+              <button class="btn btn_site" type="submit">Enviar</button>
+            </form>
+          </div>
+        </section>
+      </article>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.3.0/lity.min.js"></script>
     <script src="js/custom.js"></script>
   </body>
 </html>

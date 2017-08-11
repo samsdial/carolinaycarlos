@@ -1,0 +1,35 @@
+fieldset
+    border: none
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus
+    border: none;
+    -webkit-text-fill-color: $sienna;
+    -webkit-box-shadow: 0 0 0px 1000px $white inset;
+    transition: background-color 5000s ease-in-out 0s;
+
+
+input,
+textarea
+    width: 100%
+    display: inline-block
+
+input[type="text"],
+textarea
+    background: transparent
+    border: none
+    border-bottom: 2px solid $darkPeach
+    margin-bottom: 25px
+    padding: 22px 6px
+    -webkit-appearance: none
+    transition: all 0.3s ease-in-out
+    +press
+        background-color: rgba($white, .5)
+        outline: none
+    
+label
+    width: 100%
+    display: inline-block
+    margin-bottom: 15px
+    +font-size(3.9)

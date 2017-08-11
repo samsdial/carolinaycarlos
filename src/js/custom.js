@@ -1,37 +1,20 @@
-// test = () => alert("no mas Porro");
-// Clases predefinidas del lenguaje
-// var ahora = new Date();
-// console.log('Año:'+ahora.getFullYear());
-// Objetos Literales Js
-// var generico = {
-//     nombre: 'Mi objeto',
-//     edad: 15,
-//     saludar: function(nombre){
-//         console.log('Hola '+nombre);
-//     }
-// };
-// console.log(generico.nombre);
-// generico.saludar ('Marcos');
-// Clases de Js Definidas por el Usuario
-// DOM en jascript
-// var elemento = document.querySelector('h1');
-// var timeout = setTimeout(function (){
-//     elemento.innerHTML = 'Hola desde Javascript';
-// }, 1000);
+// Bind as an event handler
+$(document).on('click', '[data-lightbox]', lity);
+// escondo el tab con hide
 
-// DOM en jQuery
-// var elemento = $('h1');
-// var timeout = setTimeout(function(){
-//     elemento.text('Hola desde Jquery');
-// }, 1000);
-/**
- * Escuchar elementos del DOM (content loader)
- */
-document.addEventListener('DOMContentLoaded', function(){
-    console.log('DOM Cargado');
-});
-
-var enlace = document.querySelector('a');
-enlace.addEventListener('click', function(event){
-    console.log('click');
+$(document).ready(function(){
+    $('.tabgroup > div').hide();
+    $('.tabgroup > div:first-of-type').show();
+    $('.tabs a').click(function(e){
+    e.preventDefault();
+        var $this = $(this),
+            tabgroup = '#'+$this.parents('.tabs').data('tabgroup'),
+            others = $this.closest('li').siblings().children('a'),
+            target = $this.attr('href');
+        others.removeClass('active');
+        $this.addClass('active');
+        $(tabgroup).children('div').hide();
+        $(target).show();
+    
+    })
 });

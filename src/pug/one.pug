@@ -2,41 +2,32 @@ extends ./base/layout.pug
 
 block content
     section.content.full.txt_center
-        section.card.pd_top--x66e
+        section.card
             article.one
-                .info.pd_box
-                    .subtitle.txt_center.mg_bottom--x10.mg_top--x30
-                        h3 JUNTO CON SUS PADRES
-                    .title.txt_center.txt_shadow--halls.mg_bottom--x10
-                        h2
-                            b CAROLINA FALCÓN Y CARLOS AMAYA
-                    .subtitle.txt_center.mg_bottom--x10
-                        h4 Invitan a su
-                    .title.font_second.fz_13.txt_center.txt_shadow--halls.mg_bottom--x10
-                        h2 Boda
-                    .subtitle.txt_center.mg_bottom--x10
-                        h4 Martes
-                        hr.line.line_site
-                    .title.fz_7.txt_center.txt_shadow--halls.mg_bottom--x10
-                        h2 19 de Septiembre 2017
-                        hr.line.line_site
-                    .subtitle.txt_center.mg_bottom--x10
-                        h4 Ladies’ Pavillion
-                        h4 MANHATTAN NEY YORK, NY 10024
-                        hr.line.line_site
             article.two
-                .info.bgc--lightpeach.pd_box
-                    .subtitle.txt_center.mg_bottom--x10.mg_top--x30
-                        h3 DESPUÉS DE UNA CEREMONIA DE BODAS
-                        h3 ESTAMOS FELICES DE INVITARLOS
-                        h3 A LA RECEPCIÓN
-                        h3 PARA CELEBRAR CON LOS NUEVOS
-                    .title.font_second.fz_13.txt_center.txt_shadow--halls.mg_bottom--x10
-                        h2 Mr & Mrs
-                        hr.line.line_site
-                    .subtitle.txt_center.mg_bottom--x10.mg_top--x30
-                        h3 TRATTORIA L’INCONTRO 21-76 31ST STREET, ASTORIA NY 11105
+                a.btn.btn_gosth(href="#indline", data-lity) leer
             article.tree
-                .info.bgc--lightpeach.pd_box
-                    .subtitle.txt_center.mg_bottom--x10.mg_top--x30
-                        h3 JUNTO CON SUS PADRES
+    #indline.lity-hide.bgc--lightpeach.border_box
+        article.pd_box
+            .title.fz_7.txt_center.txt_shadow--halls.mg_bottom--x10
+                h3 Confirmar
+            ul.tabs(data-tabgroup="first-tab-group")
+                li
+                    a.active(href="#tab1") No me lo <br> perderia
+                li
+                    a(href="#tab2") Celebraremos <br> desde lejos
+            section#first-tab-group.tabgroup
+                #tab1
+                    form.confrim
+                        label(for="name") Nombre
+                        input(type="text", placehorder="Mi Nombre y Apellido")
+                        label(for="name") Acompañante
+                        input(type="text", placehorder="Mi Nombre y Apellido")
+                        button.btn.btn_site(type="submit") Enviar
+                #tab2
+                    form.message
+                        label(for="name") Nombre
+                        input(type="text", placehorder="Mi Nombre y Apellido")
+                        label(for="name") Mensaje
+                        input(type="text", placehorder="Mi Nombre y Apellido")
+                        button.btn.btn_site(type="submit") Enviar

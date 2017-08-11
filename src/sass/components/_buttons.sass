@@ -9,7 +9,7 @@
     cursor: pointer
     font-weight: 600
     -webkit-appearance: inherit
-    //+transition(all 0.3s ease-in-out)
+    transition: all 0.3s ease-in-out
 
     &--full
         width: 100%
@@ -22,10 +22,18 @@
         +press
             background-color: $white
     &_site
-        border-bottom: 2px solid transparent
-        color: $white
-        text-transform: uppercase
+        display: block
+        text-align: center
+        padding: 20px
+        border-bottom: 2px solid $darkPeach
+        background-color: $sienna
+        color: $darkPeach
+        font-weight: 900
+        transition: all 0.3s ease-in-out
+        font-size: 1.3em
+        width: 100%
         +press
-            color: $white
+            background-color: $darkPeach
+            color: $lightPeach
     &_gosth
         +btnGhost

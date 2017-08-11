@@ -1,2 +1,2 @@
-"use strict";document.addEventListener("DOMContentLoaded",function(){console.log("DOM Cargado")});var enlace=document.querySelector("a");enlace.addEventListener("click",function(e){console.log("click")});
+"use strict";$(document).on("click","[data-lightbox]",lity),$(document).ready(function(){$(".tabgroup > div").hide(),$(".tabgroup > div:first-of-type").show(),$(".tabs a").click(function(t){t.preventDefault();var a=$(this),i="#"+a.parents(".tabs").data("tabgroup"),e=a.closest("li").siblings().children("a"),s=a.attr("href");e.removeClass("active"),a.addClass("active"),$(i).children("div").hide(),$(s).show()})});
 //# sourceMappingURL=custom.js.map
