@@ -24,23 +24,49 @@
         &.two,
         &.tree
             width: 100%
-            +MQ(S)
+            +MQ(M)
                 width: 45%
         &.two
-            +afterimg
+            background-repeat: no-repeat
+            background-position: 74% center
+            background-size: 206%
+            display: inline-block
+            text-align: center
             background-image: url(../images/site/seply.png)
-            height: 64vh
+            height: 86vh
             z-index: -1
             +center
             display: inline-flex
-            
+            +MQ(S)
+                background-size: 150%
+                height: 124vh
+            +MQ(M)
+                height: 84vh
+                background-size: 100%
+                background-position: center center
+            +MQ(L)
+                background-size: 100%
+
         &.tree
-            +afterimg
+            background-repeat: no-repeat
+            background-position: center center
+            background-size: inherit
+            display: inline-block
+            text-align: center
             background-image: url(../images/site/info.png)
-            height: 64vh
+            height: 84vh
             z-index: -1
             +center
             display: inline-flex
+            +MQ(S)
+                background-size: 150%
+                height: 124vh
+            +MQ(M)
+                height: 84vh
+                background-size: 100%
+                background-position: center center
+            +MQ(L)
+                background-size: 80%
 article
     &.one
         .info
@@ -59,19 +85,62 @@ article
                 width: 45%
                 height: 62vh
                 margin: 43% 29% 0 auto
-            // +MQ(XS)
-            //     width: 60%
-            //     height: 62vh
-            //     margin: auto 23% 0 auto
-            // +MQ(S)
-            //     width: 38%
-            //     height: 62vh
-            //     margin: auto auto 0 23%
-            // +MQ(M)
-            //     width: 38%
-            //     height: 62vh
-            //     margin: auto auto 0 23%
-            // +MQ(L)
-            //     width: 31%
-            //     height: 31vh
-            //     margin: auto auto 0 23%
+            @media (min-width: 720px)
+                width: 42%
+                height: 62vh
+                margin: 44% 31% 0 auto
+            +MQ(S)
+                width: 38%
+                height: 62vh
+                margin: auto auto 0 23%
+            @media (min-width: 850px)
+                width: 35%
+                height: 62vh
+                margin: 33% 35% 0 auto
+            @media (min-width: 920px)
+                width: 30%
+                height: 62vh
+                margin: 30% 37% 0 auto
+            +MQ(M)
+                width: 29%
+                height: 62vh
+                margin: 22% 37% 0 auto
+            @media (min-width: 1130px)
+                width: 29%
+                height: 62vh
+                margin: 25% 37% 0 auto
+            @media (min-width: 1600px)
+                width: 21%
+                height: 62vh
+                margin: 21% 41% 0 auto
+    &.two
+        .info
+            margin: 10% auto 0 auto
+            width: 69%
+            height: 49vh
+            @media (min-width: 350px)
+                width: 66%
+                height: 50vh
+                margin: 27% 6% auto 4%
+            @media (min-width: 500px)
+                width: 70%
+                height: 32vh
+                margin: 30% 12% auto 10%
+            +MQ(S)
+                width: 51%
+                height: 32vh
+                margin: 40% 0% auto 12%
+            // @media (min-width: 768)
+    &.tree
+        .info
+            margin: 10% auto 0 auto
+            width: 69%
+            height: 49vh
+            @media (min-width: 350px)
+                width: 66%
+                height: 50vh
+                margin: 27% 6% auto 4%
+            @media (min-width: 500px)
+                width: 60%
+                height: 50vh
+                margin: 9% 15% auto 26%
