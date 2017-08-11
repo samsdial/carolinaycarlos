@@ -14,13 +14,18 @@
         &.one
             background-repeat: no-repeat
             background-position: center 74%
-            display: inline-block
             text-align: center
             background-image: url(../images/site/two_resp_913.png)
             width: 100%
             height: 90vh
             z-index: -1
             display: block
+            @media (min-width: 0px) and (max-width: 375px)
+                height: 97vh
+                background-size: 140%
+            @media (min-width: 376px) and (max-width: 450px)
+                height: 118vh
+                background-size: 140%
             +MQ(S)
                 background-image: url(../images/site/two_913.png)
         &.two,

@@ -56,6 +56,9 @@ html(lang="es")
             script(src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js")
             <![endif]-->
     body(style="position: relative;")
+        .hidden
+            script.
+                console.log(document)
         //- include ./_includes/_header.pug
         block content
         //- include ./_includes/_footer.pug
