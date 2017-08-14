@@ -28,6 +28,8 @@
                 background-size: 140%
             +MQ(S)
                 background-image: url(../images/site/two_913.png)
+            +MQ(M)
+                height: 68vh
         &.two,
         &.tree
             width: 100%
@@ -39,19 +41,30 @@
             display: inline-block
             text-align: center
             background-image: url(../images/site/seply.png)
-            height: 90vh
+            height: 72vh
             position: relative
+            top: -75px
             @media (min-width: 0px) and (max-width: 476px)
                 height: 600px
+            +MQ(M)
+                height: 66vh
+                top: -75px
+                background-position: 85% 0%
         &.tree
             background-repeat: no-repeat
             background-position: center 85%
             display: inline-block
             text-align: center
             background-image: url(../images/site/info.png)
-            height: 90vh
+            height: 72vh
+            position: relative
+            top: -139px
             @media (min-width: 0px) and (max-width: 476px)
                 height: 600px
+            +MQ(M)
+                height: 66vh
+                top: -75px
+                background-position: -20% 0%
 .tabs
     list-style: none
     padding: 0
