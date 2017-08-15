@@ -3,6 +3,11 @@ $(document).on('click', '[data-lightbox]', lity);
 // escondo el tab con hide
 
 $(document).ready(function(){
+    $('.fernhome').removeClass('in');
+    $('.fernhome').addClass('out');
+    $('.one').removeClass('in');
+    $('.two').removeClass('in');
+    $('.tree').removeClass('in');
     $('.tabgroup > div').hide();
     $('.tabgroup > div:first-of-type').show();
     $('.tabs a').click(function(e){
