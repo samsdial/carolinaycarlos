@@ -23,6 +23,7 @@
             @media (min-width: 0px) and (max-width: 375px)
                 height: 97vh
                 background-size: 140%
+                min-height: 600px
             @media (min-width: 376px) and (max-width: 450px)
                 height: 118vh
                 background-size: 140%
@@ -30,6 +31,7 @@
                 background-image: url(../images/site/two_913.png)
             +MQ(M)
                 height: 68vh
+                min-height: 625px
         &.two,
         &.tree
             width: 100%
@@ -37,7 +39,7 @@
                 width: 45%
         &.two
             background-repeat: no-repeat
-            background-position: 74% center
+            background-position: 53% center
             display: inline-block
             text-align: center
             background-image: url(../images/site/seply.png)
@@ -50,6 +52,7 @@
                 height: 66vh
                 top: -75px
                 background-position: 85% 0%
+                min-height: 625px
         &.tree
             background-repeat: no-repeat
             background-position: center 85%
@@ -65,6 +68,7 @@
                 height: 66vh
                 top: -75px
                 background-position: -20% 0%
+                min-height: 625px
 .tabs
     list-style: none
     padding: 0
@@ -90,6 +94,36 @@
                 background-color: $sienna
                 color: $lightPeach
 .tabgroup
-    div
+    .eco
         padding: 30px
         width: 100%
+.link
+    position: relative
+    display: block
+    height: 50vh
+    
+.one
+    .link
+        width: 100%
+        margin: auto
+        top: 34%
+        +MQ(M)
+            width: 30%
+            top: 15%
+.two,
+.tree
+    .link
+        width: 100%
+        top: 6%
+        +MQ(M)
+            width: 42%
+
+.two
+    .link
+        +MQ(M)
+            margin: 0% 35%
+
+.tree
+    .link
+        +MQ(M)
+            margin: 0% 17%

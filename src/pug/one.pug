@@ -4,11 +4,14 @@ block content
     section.content.full.txt_center
         section.card
             article.one
-                a.btn.btn_gosth(href="https://goo.gl/maps/nv77bDCrSXu", target="_blank") leer
+                .link
+                    a.btn.btn_gosth(href="https://goo.gl/maps/nv77bDCrSXu", target="_blank") leer
             article.two
-                a.btn.btn_gosth(href="#indline", data-lity) leer
+                .link
+                    a.btn.btn_gosth(href="#indline", data-lity) leer
             article.tree
-                a.btn.btn_gosth(href="https://goo.gl/maps/sJJj2Go4P342", target="_blank") leer
+                .link
+                    a.btn.btn_gosth(href="https://goo.gl/maps/sJJj2Go4P342", target="_blank") leer
     #indline.lity-hide.bgc--lightpeach.border_box
         article.pd_box
             .title.fz_7.txt_center.txt_shadow--halls.mg_bottom--x10
@@ -19,17 +22,25 @@ block content
                 li
                     a(href="#tab2") Celebraremos <br> desde lejos
             section#first-tab-group.tabgroup
-                #tab1
+                #tab1.eco
                     form.confrim
-                        label(for="name") Nombre
-                        input(type="text", placehorder="Mi Nombre y Apellido")
-                        label(for="name") Acompañante
-                        input(type="text", placehorder="Mi Nombre y Apellido")
-                        button.btn.btn_site(type="submit") Enviar
-                #tab2
+                        .name
+                            label(for="name") Nombre
+                            input#name(type="text", placeholder="Nombre y Apellido")
+                        .escort
+                            label(for="escort") Acompañante
+                            input#escort(type="text", placeholder="Nombre de su acompañate")
+                        .alert
+                            p
+                        button.stconfrim.btn.btn_site(type="submit") Enviar
+                #tab2.eco
                     form.message
-                        label(for="name") Nombre
-                        input(type="text", placehorder="Mi Nombre y Apellido")
-                        label(for="name") Mensaje
-                        input(type="text", placehorder="Mi Nombre y Apellido")
-                        button.btn.btn_site(type="submit") Enviar
+                        .name--message
+                            label(for="name") Nombre
+                            input#nameMessage(type="text", placeholder="Nombre y Apellido")
+                        .data--message
+                            label(for="data") Déjanos un mensaje
+                            textarea#dataMessage(type="text", placeholder="Escribir aquí el mensaje", rows="4", cols="50")
+                        .alert
+                            p
+                        button.stmessage.btn.btn_site(type="submit") Enviar

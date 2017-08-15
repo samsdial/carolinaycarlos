@@ -57,9 +57,15 @@
     </div>
     <section class="content full txt_center">
       <section class="card">
-        <article class="one"><a class="btn btn_gosth" href="https://goo.gl/maps/nv77bDCrSXu" target="_blank">leer</a></article>
-        <article class="two"><a class="btn btn_gosth" href="#indline" data-lity>leer</a></article>
-        <article class="tree"><a class="btn btn_gosth" href="https://goo.gl/maps/sJJj2Go4P342" target="_blank">leer</a></article>
+        <article class="one">
+          <div class="link"><a class="btn btn_gosth" href="https://goo.gl/maps/nv77bDCrSXu" target="_blank">leer</a></div>
+        </article>
+        <article class="two">
+          <div class="link"><a class="btn btn_gosth" href="#indline" data-lity>leer</a></div>
+        </article>
+        <article class="tree">
+          <div class="link"><a class="btn btn_gosth" href="https://goo.gl/maps/sJJj2Go4P342" target="_blank">leer</a></div>
+        </article>
       </section>
     </section>
     <div class="lity-hide bgc--lightpeach border_box" id="indline">
@@ -72,22 +78,36 @@
           <li><a href="#tab2">Celebraremos <br> desde lejos</a></li>
         </ul>
         <section class="tabgroup" id="first-tab-group">
-          <div id="tab1">
+          <div class="eco" id="tab1">
             <form class="confrim">
-              <label for="name">Nombre</label>
-              <input type="text" placehorder="Mi Nombre y Apellido">
-              <label for="name">Acompañante</label>
-              <input type="text" placehorder="Mi Nombre y Apellido">
-              <button class="btn btn_site" type="submit">Enviar</button>
+              <div class="name">
+                <label for="name">Nombre</label>
+                <input id="name" type="text" placeholder="Nombre y Apellido">
+              </div>
+              <div class="escort">
+                <label for="escort">Acompañante</label>
+                <input id="escort" type="text" placeholder="Nombre de su acompañate">
+              </div>
+              <div class="alert">
+                <p></p>
+              </div>
+              <button class="stconfrim btn btn_site" type="submit">Enviar</button>
             </form>
           </div>
-          <div id="tab2">
+          <div class="eco" id="tab2">
             <form class="message">
-              <label for="name">Nombre</label>
-              <input type="text" placehorder="Mi Nombre y Apellido">
-              <label for="name">Mensaje</label>
-              <input type="text" placehorder="Mi Nombre y Apellido">
-              <button class="btn btn_site" type="submit">Enviar</button>
+              <div class="name--message">
+                <label for="name">Nombre</label>
+                <input id="nameMessage" type="text" placeholder="Nombre y Apellido">
+              </div>
+              <div class="data--message">
+                <label for="data">Déjanos un mensaje</label>
+                <textarea id="dataMessage" type="text" placeholder="Escribir aquí el mensaje" rows="4" cols="50"></textarea>
+              </div>
+              <div class="alert">
+                <p></p>
+              </div>
+              <button class="stmessage btn btn_site" type="submit">Enviar</button>
             </form>
           </div>
         </section>
