@@ -51,13 +51,19 @@
             height: 72vh
             position: relative
             top: -75px
+            min-height: 800px
             @media (min-width: 0px) and (max-width: 476px)
-                height: 600px
+                background-size: 140%
+                background-position: center center
+                min-height: 511px
+                top: 0
             +MQ(M)
                 height: 66vh
                 top: -75px
                 background-position: 85% 0%
                 min-height: 625px
+            +MQ(L)
+                background-position: center center
             &.in
                 background-image: url(../images/site/seply_min.png)
                 background-size: 70%
@@ -70,13 +76,20 @@
             height: 72vh
             position: relative
             top: -139px
+            min-height: 650px
             @media (min-width: 0px) and (max-width: 476px)
-                height: 600px
+                background-size: 140%
+                background-position: center center
+                min-height: 511px
+                top: 0
             +MQ(M)
                 height: 66vh
                 top: -75px
-                background-position: -20% 0%
+                background-position: 55% 0%
                 min-height: 625px
+                float: right
+            +MQ(L)
+                background-position: center center
             &.in
                 background-image: url(../images/site/info_min.png)
                 background-size: 70%
